@@ -15,9 +15,7 @@ spring:
           uri: lb://servicesbc-service
           predicates:
             - Path=/legalAdvices/**
-            - Path=/customLegalCases/**
         - id: userprofile-service
           uri: lb://userprofile-service
           predicates:
             - Path=/customers/**
-            - Path=/lawyers/**
