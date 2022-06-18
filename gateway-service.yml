@@ -14,8 +14,12 @@ spring:
         - id: servicesbc-service
           uri: lb://servicesbc-service
           predicates:
-            - Path=/legalAdvices/**
+            - Path=/services/**
         - id: userprofile-service
           uri: lb://userprofile-service
           predicates:
-            - Path=/customers/**
+            - Path=/users/**
+        - id: subscription-service
+            uri: lb://subscription-service
+            predicates:
+              - Path=/subscriptions/**
