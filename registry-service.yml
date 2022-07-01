@@ -2,7 +2,7 @@ server:
   port: 8761
 eureka:
   instance:
-    hostname: registry-deploy-itwiclrlua-uc.a.run.app
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
