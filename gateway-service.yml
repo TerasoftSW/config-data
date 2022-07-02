@@ -12,7 +12,7 @@ spring:
           enabled: true
       routes:
         - id: servicesbc-service
-          uri: lb://servicesbc-service
+          uri: https://subscription-service-deploy-6ndum5nuxa-uc.a.run.app
           predicates:
             - Path=/services/**
         - id: userprofile-service
@@ -20,7 +20,7 @@ spring:
           predicates:
             - Path=/users/**
         - id: subscription-service
-          uri: lb://subscription-service
+          uri: https://6ed6eqqrcp.us-east-2.awsapprunner.com
           predicates:
             - Path=/subscriptions/**
         - id: qualification-service
