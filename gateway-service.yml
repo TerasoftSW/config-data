@@ -23,6 +23,3 @@ spring:
           uri: https://terasoftapp.azurewebsites.net
           predicates:
             - Path=/qualifications/**
-        - id: userprofile-service
-          uri: lb://userprofile-service
-            - Path=/users/**
