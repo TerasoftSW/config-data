@@ -24,6 +24,6 @@ spring:
           predicates:
             - Path=/subscriptions/**
         - id: qualification-service
-            uri: lb://qualification-service
-            predicates:
-              - Path=/qualifications/**
+          uri: lb://qualification-service
+          predicates:
+            - Path=/qualifications/**
