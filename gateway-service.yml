@@ -3,7 +3,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8791/eureka/
+      defaultZone: https://registry-deploy-itwiclrlua-uc.a.run.app/eureka
 spring:
   cloud:
     gateway:
