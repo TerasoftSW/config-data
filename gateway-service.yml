@@ -19,3 +19,10 @@ spring:
           uri: https://subscription-service-deploy-6ndum5nuxa-uc.a.run.app
           predicates:
             - Path=/subscriptions/**
+        - id: qualification-service
+          uri: https://terasoftapp.azurewebsites.net
+          predicates:
+            - Path=/qualifications/**
+        - id: userprofile-service
+          uri: lb://userprofile-service
+            - Path=/users/**
